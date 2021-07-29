@@ -1,0 +1,12 @@
+Player1 : 20
+Player2 : 30
+Player3 : 10
+Player4 : 22
+Player5 : 21
+Player6 : 65
+Player7 : 89
+Player8 : 9
+Player9 : 12
+Player10 : 160
+Player11 : 190
+Player12 : 34
