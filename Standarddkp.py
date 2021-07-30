@@ -53,11 +53,8 @@ if raid == True:
 #Figure out who wins.
         elif bid == "Done":
             cur.execute('SELECT MAX(Bid), Player FROM Bids')
-            winner = cur.fetchall()[0:]
-            for member in winner:
-                winnerlst.append(member)
-            print(winnerlst)
-            winnername = winner[1]
+            winner = cur.fetchone()[0:]
+            winnername = winner[0]
             winnerbid = winner[0]
             print(winnername)
             print(winnerbid)
@@ -93,6 +90,7 @@ if raid == True:
                 continue
             cur.execute('INSERT OR IGNORE INTO Bids (Player, bid, Current_DKP) VALUES (?, ?, ?)', (player, bid, current_dkp))
             conn.commit()
+#If no bids happen
 
 
 
